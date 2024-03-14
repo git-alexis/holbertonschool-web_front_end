@@ -39,11 +39,10 @@ body {
 a:link {
 	color: #161616;
 	text-decoration: none;
-	font-style: italic;
 }
 
 a:visited {
-	color: inherit;
+	font-style: italic;
 }
 
 a:hover {
