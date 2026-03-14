@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Français : FCM 2C",
+      "author": "alexisB"
+    },
+    {
+      "id": 2,
+      "title": "Français : B1 Bis",
+      "author": "alexisB"
+    },
+    {
+      "id": 3,
+      "title": "Britannique : Churchill VII",
+      "author": "alexisB"
+    },
+    {
+      "id": 4,
+      "title": "Britannique : Churchill VI",
+      "author": "alexisB"
+    },
+    {
+      "id": 5,
+      "title": "Britannique : Churchill III / IV",
+      "author": "alexisB"
+    },
+    {
+      "id": 6,
+      "title": "Britannique : Churchill II",
+      "author": "alexisB"
+    },
+    {
+      "id": 7,
+      "title": "Britannique : Churchill I",
+      "author": "alexisB"
+    },
+    {
+      "id": 8,
+      "title": "Allemand : Panzer VI - Tiger II",
+      "author": "alexisB"
+    },
+    {
+      "id": 9,
+      "title": "Allemand : Panzer VI - Tiger I",
+      "author": "alexisB"
+    },
+    {
+      "id": 10,
+      "title": "Allemand : Panzer V - Panther",
+      "author": "alexisB"
+    },
+    {
+      "id": 11,
+      "title": "Allemand : Panzer IV",
+      "author": "alexisB"
+    },
+    {
+      "id": 12,
+      "title": "Allemand : Panzer III",
+      "author": "alexisB"
+    },
+    {
+      "id": 13,
+      "title": "Allemand : Panzer II",
+      "author": "alexisB"
+    },
+    {
+      "id": 14,
+      "title": "Allemand : Panzer I",
+      "author": "alexisB"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "My favourite, The French béhémoth !!!",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "alexisB"
+  }
+}
