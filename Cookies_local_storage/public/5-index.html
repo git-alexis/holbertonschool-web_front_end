@@ -18,6 +18,7 @@
                 for (const item of availableItems) {
                     const li = document.createElement("li");
                     li.innerHTML = item;
+                    li.style.cursor = "pointer";
                     li.addEventListener("click", () => {
                         addItemToCart(item);
                     });
