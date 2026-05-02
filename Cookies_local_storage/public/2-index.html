@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Cookies & local storage</title>
+        <script type="application/javascript">
+            function setCookies() {
+                const firstname = document.getElementById("firstname").value;
+                const email = document.getElementById("email").value;
+                const date = new Date();
+                date.setTime(date.getTime() + (10*24*60*60*1000));
+                document.cookie = "firstname=" + firstname + "; expires=" + date.toUTCString() + "path=/";
+                document.cookie = "email=" + email + "; expires=" + date.toUTCString() + "path=/";
+            }
+
+            function getCookie(name) {
+                const cookies = document.cookie.split("; ");
+
+                for (let cookie of cookies) {
+                    const [key, value] = cookie.split("=");
+
+                    if (key === name) {
+                        return value;
+                    }
+                }
+
+                return "";
+            }
+
+            function showCookies() {
+                const email = getCookie("email");
+                const firstname = getCookie("firstname");
+                const p = document.createElement("p");
+                p.innerHTML = "Email: " + email + " - Firstname: " + firstname;
+                document.body.appendChild(p);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Login to the website</h1>
+        <input id="firstname" placeholder="Firstname"></input>
+        <input id="email" placeholder="Email"></input>
+        <button onclick="setCookies()">Log me in</button>
+        <h1>Cookies</h1>
+        <button onclick="showCookies()">Show the cookies</button>
+    </body>
+</html>
