@@ -10,8 +10,8 @@
                 const email = document.getElementById("email").value;
                 const date = new Date();
                 date.setTime(date.getTime() + (10*24*60*60*1000));
-                document.cookie = "firstname=" + firstname + "; expires=" + date.toUTCString() + "path=/";
-                document.cookie = "email=" + email + "; expires=" + date.toUTCString() + "path=/";
+                document.cookie = "firstname=" + firstname + "; expires=" + date.toUTCString() + "; path=/";
+                document.cookie = "email=" + email + "; expires=" + date.toUTCString() + "; path=/";
             }
 
             function getCookie(name) {
